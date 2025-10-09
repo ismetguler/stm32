@@ -1,0 +1,20 @@
+11:20:07 **** Incremental Build of configuration Debug for project 11_ADC_Gercek_Voltaj_Degeri ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:49:9: warning: built-in function 'index' declared as non-function [-Wbuiltin-declaration-mismatch]
+   49 | uint8_t index;
+      |         ^~~~~
+arm-none-eabi-gcc -o "11_ADC_Gercek_Voltaj_Degeri.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ismet\STM32CubeIDE\workspace_1.19.0\11_ADC_Gercek_Voltaj_Degeri\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="11_ADC_Gercek_Voltaj_Degeri.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 11_ADC_Gercek_Voltaj_Degeri.elf
+ 
+arm-none-eabi-size  11_ADC_Gercek_Voltaj_Degeri.elf 
+arm-none-eabi-objdump -h -S 11_ADC_Gercek_Voltaj_Degeri.elf  > "11_ADC_Gercek_Voltaj_Degeri.list"
+   text	   data	    bss	    dec	    hex	filename
+   8456	     12	   1660	  10128	   2790	11_ADC_Gercek_Voltaj_Degeri.elf
+Finished building: default.size.stdout
+ 
+Finished building: 11_ADC_Gercek_Voltaj_Degeri.list
+ 
+
+11:20:08 Build Finished. 0 errors, 1 warnings. (took 865ms)
+

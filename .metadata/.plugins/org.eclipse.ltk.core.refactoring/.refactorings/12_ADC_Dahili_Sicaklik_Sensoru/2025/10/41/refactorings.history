@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;12_ADC_Dahili_Sicaklik_Sensoru/11_ADC_Gercek_Voltaj_Degeri.ioc&apos; to &apos;12_ADC_Dahili_Sicaklik_Sensoru.ioc&apos;" description="Rename resource &apos;11_ADC_Gercek_Voltaj_Degeri.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="11_ADC_Gercek_Voltaj_Degeri.ioc" name="12_ADC_Dahili_Sicaklik_Sensoru.ioc" stamp="1760004981937" updateReferences="true"/>
+</session>
