@@ -1,6 +1,6 @@
 # STM32 Programlama Eğitim Notları ve Uygulamaları
 
-![Language](https://img.shields.io/badge/Language-C/C%2B%2B-blue.svg)
+![Language](https://img.shields.io/badge/Language-C-blue.svg)
 ![Platform](https://img.shields.io/badge/Platform-STM32F4-orange.svg)
 ![Source](https://img.shields.io/badge/Kaynak-BTK_Akademi-green.svg)
 
