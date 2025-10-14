@@ -10,7 +10,7 @@ Bu repository, **STM32F4 Discovery Kartı ile Uygulamalı Gömülü Sistemler E�
 
 Eğitim sürecinde aşağıdaki teknik konularda uygulamalı deneyim kazandım:
 
-| Bölüm | Konu Başlığı |
+| Bölüm | Konu Başlığı | Durum
 | :--- | :--- | :--- |
 | **Giriş ve Temeller** | Kart Tanıtımı, Kurulum ve İnceleme 
 | **Temel Donanım** | Sistem Saati ve Ayarları
