@@ -1,42 +1,36 @@
-# STM32 Programlama Eğitim Notları ve Uygulamaları
+# 🚀 STM32 & Gömülü Sistemler Yolculuğum
 
-![Language](https://img.shields.io/badge/Language-C-blue.svg)
-![Platform](https://img.shields.io/badge/Platform-STM32F4-orange.svg)
-![Source](https://img.shields.io/badge/Kaynak-BTK_Akademi-green.svg)
+Burası benim STM32 ile olan maceramın toplandığı yer. Sıfırdan başlayıp, roket aviyoniğine kadar giden yolda öğrendiğim, denediğim ve geliştirdiğim kodları burada biriktiriyorum. Amacım sadece kod yazmak değil; donanımın nasıl çalıştığını, sensörlerin dilini ve gerçek zamanlı sistemleri (RTOS) derinlemesine kavramak.
 
-Bu repository, **STM32F4 Discovery Kartı ile Uygulamalı Gömülü Sistemler Eğitimi** kapsamında edindiğim temel bilgileri, geliştirdiğim kodları ve aldığım notları içermektedir. Amacı, gömülü sistemler programlama yetkinliklerimi sistematik bir şekilde belgelemektir.
+---
 
-## 📖 Kazanılan Yetkinlikler (Kurs İçeriği)
+## 🛠️ Neler Kullanıyorum?
 
-Eğitim sürecinde aşağıdaki teknik konularda uygulamalı deneyim kazandım:
+* **Kart:** STM32F407VGT6 (Discovery Kit) 
+* **Dil:** C (Embedded C)
+* **Ortam:** STM32CubeIDE
+* **Kütüphane:** HAL (Hardware Abstraction Layer) ama gerektiğinde Register'a da girerim. :)
+* **Diğer:** Wokwi, FreeRTOS, Proteus
 
-| Bölüm | Konu Başlığı | Durum
-| :--- | :--- | :--- |
-| **Giriş ve Temeller** | Kart Tanıtımı, Kurulum ve İnceleme 
-| **Temel Donanım** | Sistem Saati ve Ayarları
-| **G/Ç İşlemleri** | Genel Amaçlı Giriş Çıkış İşlemleri (GPIO) ve Harici Kesmeler (EXTI)
-| **Analog İşlemler** | Analog Dijital Çevirici (ADC) Uygulamaları
-| **Zamanlama** | Zamanlayıcılar (Timers)
-| **Veri Aktarımı** | Doğrudan Bellek Erişimi (DMA)
-| **Haberleşme** | UART/USART Protokolleri (Seri Haberleşme)
-| **Haberleşme** | I2C Haberleşme Protokolü
-| **Haberleşme** | SPI Haberleşme Protokolü
-| **İleri Konular** | Hafıza Birimi Yönetimi ve Rastgele Numara Üretici Çevresel Birimi
+---
 
-## 🛠️ Kullanılan Temel Araçlar
+## 📂 Burada Neler Bulacaksınız?
 
-* **Programlama Dili:** C
-* **Mikrodenetleyici:** STM32F4 Discovery Kartı
-* **Geliştirme Ortamı (IDE):** [STM32CubeIDE]
-* **Kütüphaneler:** STM32 HAL (Hardware Abstraction Layer) Kütüphaneleri
+Bu repodaki klasörler benim öğrenme sürecimi kronolojik olarak yansıtıyor. En temelden başlayıp, adım adım daha karmaşık sistemlere geçiyorum.
 
-## 📁 Repository Yapısı
+Genel olarak şunları kurcaladım:
+* **Temel Giriş/Çıkış:** LED yakıp söndürmekten, buton okuma ve "Interrupt" (Kesme) mantığına kadar donanımla ilk temas.
+* **Analog Dünya (ADC & PWM):** Potansiyometre okuma, motor sürme sinyalleri ve nefes alan LED efektleri.
+* **Haberleşme (UART, I2C, SPI):** Sensörlerle konuşma, bilgisayara veri basma ve modüller arası iletişim.
+* **Algoritmalar:** Sensör verilerini anlamlandırma ve karar verme mekanizmaları.
+* **Gerçek Zamanlı Sistemler (RTOS):** (Şu an üzerinde çalışıyorum) İşlemciye aynı anda birden fazla iş yaptırma sanatı.
 
-Bu repodaki klasörler, yukarıdaki tabloyu yansıtacak şekilde isimlendirilmiştir. Her klasör, ilgili konu başlığına ait temel düzeydeki uygulama ve deneme kodlarını içerir.
+---
 
-## irtibat
+## 🌟 Göz Bebeği Projem: Sanal Roket Aviyoniği 🚀
 
-İsmet Güler
-
-* **LinkedIn:** [https://www.linkedin.com/in/ismet-g%C3%BCler-0b7ba8351/]
-* **GitHub:** [@ismetguler](https://github.com/ismetguler)
+Bu repodaki en sevdiğim işlerden biri (`08_Virtual_Rocket`). 
+Elimde sensör yokken bile kodla bir "Sanal Roket" simülasyonu oluşturdum. Bu sistem:
+1.  Roketin hayali irtifasını hesaplıyor.
+2.  Belirli yüksekliğe gelince **otonom karar verip** paraşüt açıyor (LED yakıyor).
+3.  Tüm uçuş verilerini anlık olarak bilgisayara (Yer İstasyonuna) raporluyor.
